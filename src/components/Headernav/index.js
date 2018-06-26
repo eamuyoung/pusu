@@ -3,7 +3,7 @@ import "./index.scss";
 export default class Header extends Component{
     render(){
         return(
-            <div className="container header-nav">
+            <div className="container">
               <div className="row">
                 <div className="col-xs-3 logecolor">
                 </div>

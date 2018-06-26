@@ -1,0 +1,23 @@
+.logecolor{
+    background-color: red;
+    height: 70px;
+}
+.navcolor{
+  padding-top: 10px;
+}
+.navcolor .nav  a{
+    color:white;
+    display: inline-block;
+    height: 57px;
+    font-size:17px;
+    padding-top: 18px;
+}
+.navcolor ul li:hover a{
+    background-color: #ed6d00;
+}
+.container{
+    width: 1220px
+}
+.header-nav{
+    background-color: black;
+}

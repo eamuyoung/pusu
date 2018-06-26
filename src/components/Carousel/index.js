@@ -30,6 +30,13 @@ export default class Carousel extends Component{
     
     render(){
         console.log(this.props.payload)
+        var slide=[];
+        if(this.props.payload.length != 0 ){
+            for(let i=0;i<this.props.payload.length;i++){
+                
+            }
+        }
+
         return(
             <div>
             <div className="swiper-container">

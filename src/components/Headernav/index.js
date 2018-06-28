@@ -1,13 +1,15 @@
 import React,{Component} from "react";
 import "./index.scss";
-export default class Header extends Component{
+export default class Headernav extends Component{
     render(){
         return(
+        <div className="headernav">
+          <div className="warp">
             <div className="container">
               <div className="row">
-                <div className="col-xs-3 logecolor">
+                <div className="col-md-3 logecolor">
                 </div>
-                <div className="col-xs-9 navcolor">
+                <div className="col-md-9 navcolor">
                    <ul className="nav navbar-nav navbar-left">
                      <li><a href="#">首页</a></li>
                      <li><a href="#">别墅</a></li>
@@ -21,6 +23,7 @@ export default class Header extends Component{
                 </div>
               </div>
             </div>
-       
+          </div>
+        </div>
         )}
 }

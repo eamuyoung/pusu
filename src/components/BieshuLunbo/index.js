@@ -10,8 +10,8 @@ export default class BieshuLunbo extends Component{
             loopedSlides: 5,
             autoplay: true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-right',
+                prevEl: '.swiper-button-left',
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -23,9 +23,9 @@ export default class BieshuLunbo extends Component{
                         var slideProgress = this.slides[i].progress;
                         var modify = 1;
                         if (Math.abs(slideProgress) > 1) {
-                            modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                            modify = (Math.abs(slideProgress) - 1) * 0.15 + 1;
                         }
-                        var translate = slideProgress * modify * 260 + 'px';
+                        var translate = slideProgress * modify * 100 + 'px';
                         var scale = 1 - Math.abs(slideProgress) / 5;
                         var zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
                         slide.transform('translateX(' + translate + ') scale(' + scale + ')');
@@ -60,8 +60,8 @@ export default class BieshuLunbo extends Component{
                 </div>
                 </div>
                 <div className="swiper-pagination"></div>
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
+                <div className="swiper-button-left">&lt;</div>
+                <div className="swiper-button-right">&gt;</div>
             </div>
         )
     }

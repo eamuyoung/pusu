@@ -6,7 +6,7 @@ export default class Carousel extends Component{
         super(props);
     }
     componentDidMount= () =>{
-        var swiper = new Swiper ('.swiper-container', {
+        var swiper = new Swiper ('.pusu_header .swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

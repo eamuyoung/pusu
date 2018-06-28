@@ -5,14 +5,14 @@ export default class BeishuList extends Component{
         var beiContent =[]
         for( let i=0; i<3;i++){
             beiContent.push(
-                <div className="col-md-4">
+            <div className="col-md-4" key={i}>
                 <div className="bieshu-image">
                 <img src="./src/public/bieshuimg/bieshu.jpg" alt=""/>
                 </div>
                 <p className="bieshu-title">傍水绿墅-10米挑空度假休闲吧</p>
                 <p className="bieshu-describe">四居室&nbsp;380平&nbsp;宜居10人&nbsp;北京|昌平区</p>
                 <p className="bieshu-price">￥3280</p>
-              </div>
+            </div>
             )
         }
         return(
@@ -34,6 +34,11 @@ export default class BeishuList extends Component{
                </div>
                <div className="bieshu-content row">
                     {beiContent}
+               </div>
+               <div className="bottom-button">
+                 <a href="#">
+                    查看更多&nbsp;>
+                 </a>
                </div>
                <h1 className="bieshu-heading"> 住墅路上的故事</h1>
             </div>

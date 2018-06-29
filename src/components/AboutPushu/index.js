@@ -1,9 +1,12 @@
 import React,{Component} from "react";
-import {Headernav,Carousel,SearchBox} from '../../components';
+import {Headernav,Carousel,SearchBox,Bigevent,AboutUs,MediaReport} from '../../components';
 import {Route,NavLink} from "react-router-dom";
 import "./index.scss";
-import {Bigevent,AboutUs} from "../../components";
 export default class AboutPushu extends Component{
+    constructor(props){
+      super(props);
+      console.log(event)
+    };
     render(){
         return(
              <div>
@@ -17,10 +20,11 @@ export default class AboutPushu extends Component{
                       <ul className="about-nav clearfix">
                           <li><NavLink to="/about/us" activeClassName="about-nav-color">关于我们</NavLink></li>
                           <li><NavLink to="/about/event" activeClassName="about-nav-color">大事件</NavLink></li>
-                          <li><a>媒体报导</a></li>
+                          <li><NavLink to="/about/media" activeClassName="about-nav-color">媒体报导</NavLink></li>
                       </ul>
                     <Route exact path="/about/event" component={Bigevent}/>
                     <Route path="/about/us" component={AboutUs}/>
+                    <Route path="/about/media" component={MediaReport}/>
                    </nav>
                 </div>
              </div>

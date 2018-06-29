@@ -7,3 +7,4 @@ export BieshuLunbo from "./BieshuLunbo";
 export AboutPushu from "./AboutPushu";
 export Bigevent from "./Bigevent";
 export AboutUs from "./AboutUs";
+export MediaReport from "./MediaReport";

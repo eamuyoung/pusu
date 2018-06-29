@@ -29,7 +29,6 @@ export default class Carousel extends Component{
     }
     
     render(){
-        console.log(this.props.payload)
         return(
             <div>
             <div className="swiper-container">

@@ -1,1 +1,2 @@
-export Bieshu from "./Bieshu"
+export Bieshu from "./Bieshu";
+export AboutPushu from "./AboutPushu";

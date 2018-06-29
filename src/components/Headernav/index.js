@@ -1,4 +1,7 @@
 import React,{Component} from "react";
+import {
+  NavLink
+} from 'react-router-dom'
 import "./index.scss";
 export default class Headernav extends Component{
     render(){
@@ -12,9 +15,9 @@ export default class Headernav extends Component{
                 <div className="col-md-9 navcolor">
                    <ul className="nav navbar-nav navbar-left">
                      <li><a href="#">首页</a></li>
-                     <li><a href="#">别墅</a></li>
-                     <li><a href="#">海外公寓</a></li>
-                     <li><a href="#">关于朴宿</a></li>
+                     <li><NavLink to="/bieshu" activeClassName="activecolor">别墅</NavLink></li>
+                     <li><NavLink to="" >海外公寓</NavLink></li>
+                     <li><NavLink to="/about" activeClassName="activecolor">关于我们</NavLink></li>
                    </ul>
                    <ul className="nav navbar-nav navbar-right">
                     <li><a href="#">注册</a></li>

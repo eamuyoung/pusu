@@ -4,3 +4,6 @@ export Bieshu from "./Bieshu";
 export SearchBox from "./SearchBox";
 export BieshuList from "./BieshuList";
 export BieshuLunbo from "./BieshuLunbo";
+export AboutPushu from "./AboutPushu";
+export Bigevent from "./Bigevent";
+export AboutUs from "./AboutUs";

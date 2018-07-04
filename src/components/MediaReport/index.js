@@ -24,14 +24,14 @@ export default class MediaReport extends Component{
        this.tagpage =(event)=>{
            page = event.target.text
            var url = `http://localhost:3000/products?_page=${page}&_limit=21`;
-        fetch(url)
-            .then(res => {
-                return res.json();
-            }).then(data =>{
-                this.setState({
-                    arr: [...data]
+            fetch(url)
+                .then(res => {
+                    return res.json();
+                }).then(data =>{
+                    this.setState({
+                        arr: [...data]
+                    })
                 })
-            })
        }
     };
     render(){

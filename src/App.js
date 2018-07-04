@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Bieshu,AboutPushu} from "./containers";
+import {Bieshu,AboutPushu,Haiwaibieshu} from "./containers";
 import {HashRouter,Route} from "react-router-dom";
 export default class App extends Component{
     render(){
@@ -9,6 +9,7 @@ export default class App extends Component{
                 <div>
                     <Route exact path="/bieshu" component={Bieshu}/>
                     <Route path="/about" component={AboutPushu}/>
+                    <Route path="/haiwai" component={Haiwaibieshu}/>
                 </div>
             </HashRouter>
         )
